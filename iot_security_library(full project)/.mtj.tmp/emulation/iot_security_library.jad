@@ -1,0 +1,14 @@
+MIDlet-1: security_lib_test_driver,,iot_security_library.security_lib_test_driver
+MIDlet-Jar-Size: 4739884
+MIDlet-Jar-URL: iot_security_library.jar
+MIDlet-Name: iot_security_library MIDlet Suite
+MIDlet-Permission-1: java.io.FilePermission "file:////sys/bus/iio/devices/iio:device0/in_voltage0_raw" "read"
+MIDlet-Permission-2: javax.microedition.io.SocketProtocolPermission "socket://*:*"
+MIDlet-Permission-3: javax.microedition.io.SocketProtocolPermission "socket://:*"
+MIDlet-Permission-4: javax.microedition.io.FileProtocolPermission "file:////sys/bus/iio/devices/iio:device0/in_voltage0_raw" "read"
+MIDlet-Permission-5: jdk.dio.gpio.GPIOPinPermission "*:0"
+MIDlet-Permissions: javax.microedition.io.Connector.file.read
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.8
+MicroEdition-Profile: MEEP-8.0

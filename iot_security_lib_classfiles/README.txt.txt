@@ -1,0 +1,2 @@
+These class files are the core of the security library. They must be used in conjunction with the Bouncy Castle distribution for Java ME. 
+The test driver and case study functionality are located in the src folder in the iot_security_project directory.
