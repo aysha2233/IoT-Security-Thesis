@@ -1,0 +1,20 @@
+\section{Conclusion}
+The introduction of smart devices into our homes may increase convenience, but security and privacy may also be effected. 
+Smaller devices with fewer resources may not be capable of certain security mitigations,
+and therefore, finding a balance between security and efficiency is a difficult task. 
+%In this project, we investigated the use of Java Micro Edition and Bouncy Castle as a possible means to develop a security library for smart home devices.
+In order to bring additional security to IoT environments,
+we utilized Java Micro Edition and Bouncy Castle to create a customizable security library for key exchange, key generation, encryption, authentication, and integrity. 
+Elliptic curve cryptography offers a faster, more efficient way to generate symmetric keys, %for use in a key exchange,
+so we utilized ECDH to generate a shared secret and create a shared symmetric key even for devices that have few resources. 
+Further, AES encryption with a relatively small key of 128 bits helps IoT environments encrypt quickly and communicate securely. 
+%Symmetric cryptography is the backbone of secure communication in low resource systems like a smart home due to its incredible speed over asymmetric cryptography. 
+Authentication and integrity are also important for well rounded security in an IoT environment,
+but schemes like digital signatures which use asymmetric cryptography may be unsuitable for a low resource environment,
+so we utilized MACs and authentication tags in our security library. 
+%The use of MACs and authentication tags is useful in a low resource environment where we may not be able to spare the overhead to use schemes like digital signatures which use asymmetric cryptography. 
+Our symmetric key MACs offer both the security and speed needed for authentication and integrity in an IoT environment.  
+In our case study, we found that not only do these security functions run on IoT devices, but the overhead is even less than expected. 
+While these functionalities add overhead to common operations,
+this library may be a possible solution for certain IoT devices. 
+Usage of this library may bring the currently lacking required security to many smart home environments while offering a customizable and easy to use interface. 
