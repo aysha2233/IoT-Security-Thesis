@@ -5,6 +5,11 @@ and therefore, finding a balance between security and efficiency is a difficult 
 %In this project, we investigated the use of Java Micro Edition and Bouncy Castle as a possible means to develop a security library for smart home devices.
 In order to bring additional security to IoT environments,
 we utilized Java Micro Edition and Bouncy Castle to create a customizable security library for key exchange, key generation, encryption, authentication, and integrity. 
+While Bouncy Castle provides all possible means of providing these functionalities,
+we streamlined the perfect combination of its complex structure 
+in order to provide the most efficent means to bring security and privacy to an IoT environment 
+in an easily implementable manner. 
+
 Elliptic curve cryptography offers a faster, more efficient way to generate symmetric keys, %for use in a key exchange,
 so we utilized ECDH to generate a shared secret and create a shared symmetric key even for devices that have few resources. 
 Further, AES encryption with a relatively small key of 128 bits helps IoT environments encrypt quickly and communicate securely. 
